@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+}
+
+html {
+  height: 100vh;
+  font-size: 14px;
+}
+
+body {
+  background-color: #282828;
+  color: white;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.light-mode {
+  background-color: #f0f0f0;
+  color: #282828;
+}
+
+.container {
+  height: 100%;
+  max-width: 550px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a.link button {
+  width: 100%;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: none;
+  border-radius: 20px;
+  font-size: 1.2em;
+  cursor: pointer;
+  color: inherit;
+  background: linear-gradient(to right, #4682b4, #b0b0b0);
+  transition: background 0.3s, transform 0.3s;
+}
+
+a.link button:hover {
+  background: linear-gradient(to right, #5e5e5e, #dcdcdc);
+  transform: scale(1.05);
+}
+
+#theme-toggle {
+  display: block;
+  margin: 10px auto;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #4682b4;
+  color: white;
+  transition: background-color 0.3s;
+}
+
+#theme-toggle:hover {
+  background-color: #5e5e5e;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+header img {
+  max-width: 120px;
+}
+
+header h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: inherit;
+}
+
+section.botoes-links {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+footer {
+  margin-top: 10px;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+footer a {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2em;
+  border-radius: 50%;
+  margin: 0 10px;
+  padding: 10px;
+  background: linear-gradient(to right, #4682b4, #b0b0b0);
+  color: inherit;
+  transition: background 0.3s, transform 0.3s;
+}
+
+body.light-mode footer a {
+  background: linear-gradient(to right, #dcdcdc, #f0f0f0);
+}
+
+footer a:hover {
+  background: linear-gradient(to right, #5e5e5e, #dcdcdc);
+  transform: scale(1.1);
+}
+
+li {
+  padding: 10px;
+  border-radius: 10px;
+  transition: background 0.3s, transform 0.3s;
+}
+
+li:hover {
+  background: #5e5e5e;
+  color: inherit;
+  transform: scale(1.05);
+}
+
+p,
+li {
+  color: inherit;
+}
